@@ -57,6 +57,6 @@ char	*ft_strdup(char *src)
 
 /*int	main(void)
 {
-	char src[] = {"abd_alashqar"};
+	char src[] = {"Majd-saadat"};
 	printf("this the duplication of the src => %s", ft_strdup(src));
 }*/
