@@ -1,0 +1,44 @@
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msaadat <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/01 12:20:59 by msaadat           #+#    #+#             */
+/*   Updated: 2024/07/01 12:21:55 by msaadat          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include <unistd.h>
+
+int	ft_iterative_power(int nb, int power)
+{
+	int	i;
+	int	result;
+
+	i = 0;
+	result = 1;
+	if (power < 0)
+	{
+		return (0);
+	}
+	while (i < power)
+	{
+		result = result * nb;
+		i++;
+	}
+	return (result);
+}
+/*
+int main(void)
+{
+    int pw = 3;
+    int num = 3;
+    
+    printf("%d", ft_iterative_power(num, pw));
+    
+    return 0;
+}*/
